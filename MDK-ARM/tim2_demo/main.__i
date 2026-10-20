@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include
+-I.\RTE\_tim2_demo
+-ID:\keil5\packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+-ID:\keil5\packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB
+-o tim2_demo\main.o --omf_browse tim2_demo\main.crf --depend tim2_demo\main.d "../Core/Src/main.c"
